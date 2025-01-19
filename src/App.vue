@@ -1,12 +1,20 @@
 <script setup>
-// import scritps
+import Header from './components/Header.vue';
+import Main from './components/Main.vue';
 </script>
 
 <template>
-  
+  <Header></Header>
+  <Main></Main>
 </template>
 
 <style scoped>
+
+
+body {
+  border: 1px solid orange;
+}
+
 header {
   line-height: 1.5;
 }
