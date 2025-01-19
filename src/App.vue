@@ -1,11 +1,15 @@
 <script setup>
 import Header from './components/Header.vue';
 import Main from './components/Main.vue';
+
+function getRoundResult(humanChoice) {
+    console.log('You choosed ' + humanChoice)
+}
 </script>
 
 <template>
   <Header></Header>
-  <Main></Main>
+  <Main @play-round="getRoundResult"></Main>
 </template>
 
 <style scoped>
