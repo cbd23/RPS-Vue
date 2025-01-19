@@ -33,8 +33,25 @@ export default {
       console.log('You chose ' + humanChoice)
       console.log('Computer chose ' + this.computerChoice)
 
-      this.roundResult = ''
+      // TIE case:
+      if (humanChoice === this.computerChoice) {
+        this.roundResult = 'TIE'
+      }
+
+      // 'HUMAN WON' cases:
+      else if (humanChoice === 'rock' && this.computerChoice === 'scissors') {
+        this.roundResult = 'HUMAN WON'
+      } else if (humanChoice === 'paper' && this.computerChoice === 'rock') {
+        this.roundResult = 'HUMAN WON'
+      } else if (humanChoice === 'scissors' && this.computerChoice === 'paper') {
+        this.roundResult = 'HUMAN WON'
+      } 
+      
+      // Anything else means 'HUMAN LOST'
+      else this.roundResult = 'HUMAN LOST'
+
       console.log(this.roundResult)
+      return this.roundResult
     },
   },
 }
