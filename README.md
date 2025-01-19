@@ -1,15 +1,29 @@
-# RPS Challenge in Vue
+# rps-challenge-vue-cbd23
 
-This challenge is designed to evaluate your Vue and Front-End Web development skills.
-Challenge: Create a simple Vue application for a Rock-Paper-Scissors game.  
-You can find the design [here](https://www.figma.com/design/wmyaVujwkYJOhtWq3mcCub/UI's?node-id=222-26). You should receive the password for the design from Cornel.  
-The design is Desktop/Landscape-only, but you may adapt it to Mobile/Portrait as you see fit.
+This template should help get you started developing with Vue 3 in Vite.
 
-How to submit
--------------
+## Recommended IDE Setup
 
-- Fork this repo
-- Work in your own fork.
-- Submit a Pull Request from your fork to this repo.
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-Cornel will evaluate your work.
+## Customize configuration
+
+See [Vite Configuration Reference](https://vite.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
