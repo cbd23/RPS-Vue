@@ -12,7 +12,7 @@ export default {
     return {
       computerChoice: '',
       roundResult: '',
-    };
+    }
   },
   methods: {
     getComputerChoice() {
@@ -53,13 +53,20 @@ export default {
       console.log(this.roundResult)
       return this.roundResult
     },
+    // Assign an empty string to roundResult which is passed to Main as a prop - its value decides what component is then rendered inside message-container
+    resetScore() {
+      console.log('🕹️ Game restarted!')
+
+      this.roundResult = ''
+      return this.roundResult
+    }
   },
 }
 </script>
 
 <template>
   <Header></Header>
-  <Main @play-round="getRoundResult" :roundResult="roundResult"></Main>
+  <Main @play-round="getRoundResult" @play-again="resetScore" :roundResult="roundResult" ></Main>
 </template>
 
 <style scoped>
