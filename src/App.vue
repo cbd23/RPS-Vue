@@ -59,7 +59,7 @@ export default {
 
 <template>
   <Header></Header>
-  <Main @play-round="getRoundResult"></Main>
+  <Main @play-round="getRoundResult" :roundResult="roundResult"></Main>
 </template>
 
 <style scoped>
