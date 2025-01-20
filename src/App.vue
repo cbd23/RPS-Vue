@@ -54,7 +54,7 @@ export default {
       return this.roundResult
     },
     // Assign an empty string to roundResult which is passed to Main as a prop - its value decides what component is then rendered inside message-container
-    resetScore() {
+    restartGame() {
       console.log('🕹️ Game restarted!')
 
       this.roundResult = ''
@@ -66,7 +66,7 @@ export default {
 
 <template>
   <Header></Header>
-  <Main @play-round="getRoundResult" @play-again="resetScore" :roundResult="roundResult" ></Main>
+  <Main @play-round="getRoundResult" @play-again="restartGame" :roundResult="roundResult" ></Main>
 </template>
 
 <style scoped>
