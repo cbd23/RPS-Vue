@@ -26,6 +26,9 @@ export default {
     methods: {
         playRound(humanChoice) {
             this.$emit('play-round', humanChoice)
+        },
+        playAgain() {
+            this.$emit('play-again')
         }
     },
     computed: {
@@ -58,9 +61,9 @@ export default {
     </div>
     <div class="message-container">
         <InitialMessageSVG v-if="roundResult === ''" />
-        <TieSVG v-else-if="roundResult === 'TIE'"/>
-        <HumanWonSVG v-else-if="roundResult === 'HUMAN WON'" />
-        <HumanLostSVG v-else-if="roundResult === 'HUMAN LOST'"/>
+        <TieSVG @play-again="playAgain" v-else-if="roundResult === 'TIE'"/>
+        <HumanWonSVG @play-again="playAgain" v-else-if="roundResult === 'HUMAN WON'" />
+        <HumanLostSVG @play-again="playAgain" v-else-if="roundResult === 'HUMAN LOST'"/>
     </div>
   </div>
 </template>
