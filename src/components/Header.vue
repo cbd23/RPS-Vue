@@ -21,4 +21,29 @@ export default {
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 767px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-container {
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .svg-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  svg {
+    max-width: 300px;
+  }
+}
 </style>

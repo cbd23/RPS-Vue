@@ -85,4 +85,19 @@ header {
   display: block;
   margin: 0 auto 2rem;
 }
+
+@media screen and (max-width: 767px) {
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+}
 </style>

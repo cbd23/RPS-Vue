@@ -40,4 +40,55 @@ export default {
 .play-again-btn {
     cursor: pointer;
 }
+
+@media screen and (max-width: 767px) {
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        border: 2px solid white;
+    }
+
+    .message {
+        width: 100%;
+        height: 100px;
+    }
+
+    .player-score-container {
+        display: flex;
+        justify-content: center;
+        width: 30px;
+        position: absolute;
+        right: 300px;
+    }
+
+    .computer-score-container {
+        display: flex;
+        justify-content: center;
+        width: 30px;
+        position: absolute;
+        left: 300px;
+    }
+
+    .play-again-btn {
+        background-color: black;
+        border-radius: 4px;
+        width: 160px;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    .play-again-btn svg {
+        width: 150px;
+    }
+
+    .computer-score-container svg {
+        width: 50px;
+    }
+}
 </style>

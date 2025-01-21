@@ -13,3 +13,27 @@ export default {
         </svg>
     </div>
 </template>
+
+<style scoped>
+@media screen and (max-width: 767px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    svg {
+        max-width: 300px;
+    }
+
+    body {
+        max-width: 100vw;
+    }
+
+    .header-container {
+        display: flex;
+        width: 100vw;
+        margin: auto;
+    }
+}
+</style>

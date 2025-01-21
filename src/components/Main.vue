@@ -215,4 +215,125 @@ export default {
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 767px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-container {
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .circles-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+    }
+
+    .circle {
+        height: 150px;
+        display: flex;
+        cursor: pointer;
+        transition: transform 1s ease;
+    }
+
+    /* HUMAN choice related selectors */
+    .circle-one.chosen>svg>path,
+    .visible-computer-choice>svg>path {
+        fill: #2B310A;
+        transition: fill 0.4s ease;
+    }
+
+    .circle-two.chosen {
+        transform: translateY(-113.5%);
+    }
+
+    .circle-two.chosen>svg>path {
+        fill: #2B310A
+    }
+
+    .circle-three.chosen {
+        transform: translateY(-226.5%);
+    }
+
+    .circle-three.chosen>svg>path {
+        fill: #2B310A
+    }
+
+    .circle.chosen {
+        pointer-events: none;
+    }
+
+    .not-chosen {
+        pointer-events: none;
+    }
+
+    .circle-one.winner>svg>path,
+    .circle-two.winner>svg>path,
+    .circle-three.winner>svg>path {
+        fill: red;
+    }
+
+    /* OUTCOME & COMPUTER related selectors */
+    .circle-four {
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        right: 0%;
+        cursor: default;
+    }
+
+    .circle-five {
+        z-index: -1;
+        position: absolute;
+        right: 0%;
+        top: 69.4%;
+        cursor: default;
+    }
+
+    .circle-five.winner>svg>path {
+        fill: green;
+    }
+
+    .visible-result,
+    .visible-computer-choice {
+        z-index: 1;
+    }
+
+    .message-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .message {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .player-score-container,
+    .computer-score-container {
+        width: 34px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .circles-container svg {
+        width: 140px;
+        height: 140px;
+    }
+
+    img {
+        width: 140px;
+        height: 140px;
+    }
+}
 </style>
