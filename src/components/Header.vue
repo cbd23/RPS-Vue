@@ -1,17 +1,6 @@
 <script>
 export default {
     name: 'Header',
-    props: {
-
-    },
-    data() {
-        return {
-            stringPlaceholder: 'placeholder'
-        }
-    },
-    methods: {
-
-    }
 }
 </script>
 
@@ -27,18 +16,9 @@ export default {
 
 <style scoped>
 .header-container {
-    border: 1px solid red;
     box-sizing: border-box;
     margin-top: 35px;
     display: flex;
     justify-content: center;
-}
-
-.svg-container {
-    border: 1px solid blue;
-}
-
-svg {
-    border: 1px solid greenyellow;
 }
 </style>
