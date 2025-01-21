@@ -57,6 +57,7 @@ export default {
     restartGame() {
       console.log('🕹️ Game restarted!')
 
+      this.computerChoice = ''
       this.roundResult = ''
       return this.roundResult
     }
@@ -66,7 +67,7 @@ export default {
 
 <template>
   <Header></Header>
-  <Main @play-round="getRoundResult" @play-again="restartGame" :roundResult="roundResult" ></Main>
+  <Main @play-round="getRoundResult" @play-again="restartGame" :roundResult="roundResult" :computerChoice="computerChoice" ></Main>
 </template>
 
 <style scoped>
