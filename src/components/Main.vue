@@ -116,14 +116,12 @@ export default {
 
 <style scoped>
 .main-container {
-    border: 1px solid purple;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
 
 .circles-container {
-    border: 1px solid blue;
     margin: 100px auto 74px;
     display: flex;
     justify-content: center;
