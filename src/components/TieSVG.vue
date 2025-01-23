@@ -49,10 +49,6 @@ export default {
         box-sizing: border-box;
     }
 
-    body {
-        border: 2px solid white;
-    }
-
     .message {
         width: 100%;
         height: 100px;
